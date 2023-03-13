@@ -24,9 +24,11 @@ body {
   text-align: center;
   top: -360px;
 }
+
 #menu {
   font-size: 12pt;
 }
+
 #menu ul li {
   display: inline;
 }
