@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,8 +13,9 @@
     <link rel="icon" href="../img/foto ilustrativa.png">
     <!--link fontes-->
     <link href="https://fonts.googleapis.com/css?family=Fredoka+One&display=swap" rel="stylesheet">
-    
+
 </head>
+
 <body>
     <!--Barra d menu-->
     <div id="barra_do_menu">
@@ -29,7 +31,7 @@
             <li><a href="../index.html"><i class="fas fa-home"></i> Home</a></li>
             <li><a href="../html/inserção de dados.html"><i class="far fa-file-alt"></i> inserção de dados</li></a>
             <li><a href="mais infos.html"><i class="fas fa-video"></i> Videos Informativos</li></a>
-            <li><a href="../html/FAQ.html"><i class="fas fa-question-circle"></i> Perguntas e Respostas</li></a>
+            <li><a href="../html/faq.html"><i class="fas fa-question-circle"></i> Perguntas e Respostas</li></a>
         </ul>
     </div>
     <!-- Titulo destaque -->
@@ -37,10 +39,15 @@
     <!-- Videos -->
     <div id="videos">
         <div class="mySlides fade">
-            <iframe width="1280" height="720" src="https://www.youtube.com/embed/0SNw_uyurCo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/0SNw_uyurCo" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
         </div>
         <div class="mySlides fade">
-            <iframe width="1280" height="720" src="https://www.youtube.com/embed/KOXNBA9b86I" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>        </div>
+            <iframe width="1280" height="720" src="https://www.youtube.com/embed/KOXNBA9b86I" frameborder="0"
+                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen></iframe>
+        </div>
     </div>
     <!-- botoes -->
     <div id="btn1">
@@ -53,43 +60,45 @@
     <script>
         var slideIndex = 1;
         showSlides(slideIndex);
-        
+
         function plusSlides(n) {
-          showSlides(slideIndex += n);
+            showSlides(slideIndex += n);
         }
-        
+
         function currentSlide(n) {
-          showSlides(slideIndex = n);
+            showSlides(slideIndex = n);
         }
-        
+
         function showSlides(n) {
-          var i;
-          var slides = document.getElementsByClassName("mySlides");
-          var dots = document.getElementsByClassName("dot");
-          if (n > slides.length) {slideIndex = 1}    
-          if (n < 1) {slideIndex = slides.length}
-          for (i = 0; i < slides.length; i++) {
-              slides[i].style.display = "none";  
-          }
-          for (i = 0; i < dots.length; i++) {
-              dots[i].className = dots[i].className.replace(" active", "");
-          }
-          slides[slideIndex-1].style.display = "block";  
-          dots[slideIndex-1].className += " active";
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
         }
-        </script> 
-        <!--rodape-->
+    </script>
+    <!--rodape-->
     <div id="rodape">
         <footer>
             <p>Informaçoes adicionais acesse: <a href="https://g.co/kgs/hpmAk3"></a><i class="fab fa-google"></i></a>
-            ou nos envie um Email: <a href="mailto:informacoessobreocovid19.org@gmail.com"><i class="fas fa-envelope"></i></a></p>
+                ou nos envie um Email: <a href="mailto:informacoessobreocovid19.org@gmail.com"><i
+                        class="fas fa-envelope"></i></a></p>
             <p id="copyright">Dev By Eric</p>
-        <div id="img_link_ifrs">
-            <a href="https://ifrs.edu.br/veranopolis/"><img src="../img/if.png" alt="logo_if_rs"></a>
-        </div>
-        <div id="titulo_if_link">
-            <a href="https://ifrs.edu.br/veranopolis/">Campus Veranópolis</a>
-        </div>
-        </footer>   
+            <div id="img_link_ifrs">
+                <a href="https://ifrs.edu.br/veranopolis/"><img src="../img/if.png" alt="logo_if_rs"></a>
+            </div>
+            <div id="titulo_if_link">
+                <a href="https://ifrs.edu.br/veranopolis/">Campus Veranópolis</a>
+            </div>
+        </footer>
 </body>
+
 </html>
